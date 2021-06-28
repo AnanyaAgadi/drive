@@ -8,3 +8,6 @@
 
 Product.create(name: "seed-generated product", description: "I also
 created this product without using the HTML form!")
+
+Product.create(name: "seed-gen product1", description: "
+created this product without HTML form!", price: 6.0)

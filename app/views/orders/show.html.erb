@@ -5,6 +5,7 @@
   <strong>Order ID: </strong><%= @order.id %>
   <strong>Product Name: </strong><%= @order.product.name %>
   <strong>Product Price: </strong>
+ 
   <strong>Total Price: </strong><%=
   number_to_currency(@order.total/100.to_f) %>
 </div>
