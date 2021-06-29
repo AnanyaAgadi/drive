@@ -5,20 +5,11 @@
 <h1>Products</h1>
 
 <div class="container-fluid">
-<div class="something">
+  <div class="something">
     <% @products.each do |products| %>
-    <div class="row">
-      <div class="col-sm something1"><a href="#">
-        <h1><%= products.name%></h1></a>
-         <%= image_tag("red.jpg", class: "img-fluid") %>
-          
-          <p class="para-size"><%= products.description%></p>
-          <p><%= products.price%></p>
-          <strong>$ 42</strong>
-      </div><!-- /col -->
-    </div>
-    <% end %>   
-    </div> 
+      <%= render @products %>
+    <% end %>  
+  </div> 
 </div>
 
 
