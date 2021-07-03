@@ -1,11 +1,14 @@
  
     <div class="row">
-      <div class="col-sm something1"><a href="#">
-        <h1><%= products.name%></h1></a>
-         <%= image_tag("red.jpg", class: "img-fluid") %>
-          <p class="para-size"><%= products.description%></p>
-          <p><%= products.price%></p>
-          <strong>42</strong>
-      </div><!-- /col -->
+      <% @products.each do |products| %>
+    
+        <div class="col-sm something1"><a href="#">
+          <h1><%= products.name%></h1></a>
+           <%= image_tag("red.jpg", class: "img-fluid") %>
+            <p class="para-size"><%= products.description%></p>
+            <p><%= products.price%></p>
+            <strong>42</strong>
+        </div><!-- /col -->
+      <% end %>
     </div>
     
